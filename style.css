@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    min-width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-attachment: fixed;
+    transform: translate(-50%,-50%);
+}
+
+.box{
+    text-align: center;
+}
+
+.box h2{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.box h1{
+    font-size: 2.5rem;
+    color: rgb(238, 135, 135);
+}
+
+.overlay{
+    background-color: white;
+}
+
+.grid{
+    display: grid;
+    width: 900px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+}
+
+.grid div{
+    background-color: blanchedalmond;
+    color: white;
+}
+
+.grid div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-content{
+    padding: 20px;
+}
+
+.text-content h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.text-content p{
+    font-size: 1.2rem;
+}
+
+.container{
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    background-color: rgb(238, 135, 135);
+    text-align: center;
+}
+
+.container h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.container p{
+    font-size: 1.5rem;
+}
+
+footer{
+    height: auto;
+    background-color: rgb(26,25,25);
+    box-shadow: 0 -3rem 4rem rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    padding: 10rem 10px;
+}
+
+.foot-grid{
+    display: grid;
+    width: 900px;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-gap: 3rem;
+}
+
+.foot-grid h2{
+    color: blanchedalmond;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.foot-grid p{
+    font-size: 1.5rem;
+}
+
+.foot-grid ul li{
+    font-size: 1.5rem;
+    list-style: none;
+    margin-bottom: 1rem;
+    color: blue;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 650px) {
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
